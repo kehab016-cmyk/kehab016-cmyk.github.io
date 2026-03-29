@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind-config.js"></script>
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark-bg text-gray-200 aurora-bg">
+    <!-- Aurora overlay effect -->
+    <div class="aurora-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-dark-bg/90 backdrop-blur-md border-b border-dark-border z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-center items-center">
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="index.html" class="hover:text-aurora-green transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-aurora-green transition">About</a></li>
+                    <li><a href="projects.html" class="hover:text-aurora-green transition">Projects</a></li>
+                    <li><a href="contact.html" class="hover:text-aurora-green transition">Contact</a></li>
+                </ul>
+                <!-- Mobile menu button -->
+                <button class="md:hidden" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="index.html" class="block py-2 hover:text-aurora-green">Home</a>
+                <a href="about.html" class="block py-2 hover:text-aurora-green">About</a>
+                <a href="projects.html" class="block py-2 hover:text-aurora-green">Projects</a>
+                <a href="contact.html" class="block py-2 hover:text-aurora-green">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 pt-32 bg-dark-card/30">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Get In Touch</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-aurora-green to-aurora-blue flex items-center justify-center">
+                                <i class="fas fa-envelope text-dark-bg"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400">Email</p>
+                                <p>kehab016@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-aurora-blue to-aurora-purple flex items-center justify-center">
+                                <i class="fas fa-phone text-dark-bg"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400">Phone</p>
+                                <p>01129716800</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-aurora-purple to-aurora-pink flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt text-dark-bg"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400">Location</p>
+                                <p>Giza, Egypt</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="space-y-4">
+                        <input type="text" placeholder="Your Name" class="w-full px-4 py-3 bg-dark-card border border-dark-border rounded-lg focus:outline-none focus:border-aurora-green">
+                        <input type="email" placeholder="Your Email" class="w-full px-4 py-3 bg-dark-card border border-dark-border rounded-lg focus:outline-none focus:border-aurora-green">
+                        <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-3 bg-dark-card border border-dark-border rounded-lg focus:outline-none focus:border-aurora-green"></textarea>
+                        <button type="submit" class="w-full px-8 py-3 bg-gradient-to-r from-aurora-green to-aurora-blue rounded-lg text-dark-bg font-semibold hover:shadow-lg hover:shadow-aurora-green/50 transition transform hover:scale-105">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-dark-border">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-4">
+                <a href="https://github.com/kehab016-cmyk" class="text-2xl mx-2 hover:text-aurora-green transition"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-2xl mx-2 hover:text-aurora-blue transition"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-2xl mx-2 hover:text-aurora-purple transition"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/kareem.ehab.ahmad?igsh=aTFuYnJjNzZmYW5w" class="text-2xl mx-2 hover:text-aurora-pink transition"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="text-gray-400">
+                © 2026 built by karim ehab
+            </p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-gradient-to-r from-aurora-green to-aurora-blue text-dark-bg p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 opacity-0 pointer-events-none z-50">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
