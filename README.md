@@ -7,10 +7,9 @@ This website reflects a professional developer portfolio with a dark aurora-insp
 
 ## Screenshot
 
-![Portfolio Website Screenshot](./assets/screenshot-placeholder.png)
+![Portfolio Website Screenshot]./Screenshot 2026-03-30 201412.png
 
-> Replace this image path with your actual screenshot file.  
-> Example: `./screenshot.png`
+
 
 ---
 
