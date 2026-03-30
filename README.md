@@ -7,7 +7,7 @@ This website reflects a professional developer portfolio with a dark aurora-insp
 
 ## Screenshot
 
-![Portfolio Website Screenshot]./Screenshot 2026-03-30 201412.png
+![Portfolio Website Screenshot](Screenshot 2026-03-30 201412.png)
 
 
 
